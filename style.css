@@ -1,0 +1,46 @@
+#kor {
+    animation-name: patog;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes patog {
+    0% {cx: 50px; }
+    50% {cx: 500px;}
+}
+
+body {
+    text-align: center;
+    background-color: rgb(127, 61, 61);
+}
+.l {
+    text-align: left;
+}
+img {
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px black;
+    border: solid 9px rgb(157, 187, 173);
+}
+table {
+    width: 100%;
+}
+td.c {
+    text-align: center;
+}
+td.k {
+    width: 100px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(118, 23, 29);
+    padding: 5px;
+    border-width: 5px;
+    border-color: rgb(68, 42, 24);
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+}
+td.r {
+    text-align: right;
+}
