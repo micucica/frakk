@@ -5,8 +5,7 @@
 body {
     background-color: black;
     background-image: url(bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
 }
@@ -55,4 +54,10 @@ button {
 }
 button:hover {
     background-color: rgb(247, 231, 195);
+}
+#vissza {
+    margin-top: 10px;
+}
+a {
+    background-color: bisque;
 }

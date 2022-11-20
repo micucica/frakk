@@ -62,7 +62,7 @@ class Table {
         var row = id[0]
         var col = id[1]
         var symbol = ["X", "O"][player];
-        get("state").innerHTML = ["O", "X"][player] + " Turn"
+        get("state").innerHTML = ["O", "X"][player] + " Jön"
         get(id).innerHTML = symbol;
         this.notes[row][col].val = symbol;
         player = (player + 1) % 2; //switch between 0 and 1
@@ -74,7 +74,7 @@ class Table {
         values.forEach(elem => {
             var el = elem.join("");
             if (el.includes(symbol.repeat(this.winner))) {
-                get("state").innerHTML = symbol + " wins"
+                get("state").innerHTML = symbol + " Nyert"
                 this.won = true;
             }
         })
@@ -92,6 +92,6 @@ var player = 0
 var table = new Table(12, 10, 5);
 function start() {
     table.clear();
-    get("state").innerHTML = "Ongoing"
+    get("state").innerHTML = "Folyamatban"
     get("game").innerHTML = table.htmlDisplay("table");
 }
