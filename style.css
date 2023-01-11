@@ -9,6 +9,32 @@
     50% {cx: 500px;}
 }
 
+#rez {
+    background-color: rgb(88, 6, 72);
+    border: solid 2px lightblue;
+    border-radius: 100%;
+    height: 210px;
+    position: absolute;
+    top: 175px; 
+    width: 180px; 
+    animation: rezsi 1s ease-in-out infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes rezsi {
+    0% {
+        left: 25%;
+        transform: scaleX(79.5%) scaleY(65%);
+    }
+    100% {
+        left: 55%;
+    }
+}
+
+
 body {
     text-align: center;
     background-color: rgb(127, 61, 61);
